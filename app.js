@@ -3,7 +3,7 @@ const packages = [
 heavy: true,
 priority: false,
 fragile: false,
-to: 'Harrington',
+to: 'Harrison',
 trackingNumber: '1234kjs'
 },
   {
@@ -49,4 +49,13 @@ trackingNumber: '1234kjs'
   trackingNumber: 'suz2367'
 }
 ]
+
+// function draw() {
+//   let template = ''
+//   for (let i = 0; i < packages.length; i++){
+//     const package = packages[i];
+//     template += `<li>${package.heavy}: ${package.priority}: ${package.fragile}: ${package.to}: ${package.trackingNumber}</li>`
+//   }
+//   document.getElementById('packages').innerHTML = template
+// }
 
