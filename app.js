@@ -47,8 +47,18 @@ trackingNumber: '1234kjs'
   fragile: true,
   to: 'Justin',
   trackingNumber: 'suz2367'
+},
+{
+  heavy: false,
+  priority: false,
+  fragile: true,
+  to: 'Zach',
+  trackingNumber: '2934jks'
 }
 ]
+let lostPackage = missingPackage()
+// missingPackage()
+console.log(lostPackage)
 
 function draw() {
   let template = ''
@@ -66,8 +76,6 @@ function missingPackage(){
   return packages[packageIndex] 
 }
 
-// missingPackage()
-console.log(missingPackage())
 
 
 function filterHeavy(){
@@ -119,4 +127,14 @@ function filterNumber(){
     template += `<li>${package.trackingNumber}</li>`
   }
   document.getElementById('packages').innerHTML = template
+}
+
+function guess(name){
+console.log('name is', name)
+if (lostPackage.to == name){
+  window.alert("You guessed right!")
+}else{
+  window.alert("Thats incorrect!")
+}
+
 }

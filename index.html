@@ -21,14 +21,21 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
-      <button class="btn btn-success" onclick="filterHeavy()">Heavy</button>
+    <div class="col-1 d-flex flex-column">
+      <button class="btn btn-success " onclick="filterHeavy()">Heavy</button>
       <button class="btn btn-danger" onclick="filterPriority()">Priority</button>
       <button class="btn btn-info" onclick="filterFragile()">Fragile</button>
       <button class="btn btn-dark" onclick="filterPerson()"> Recipient </button>
       <button class="btn btn-warning" onclick="filterNumber()">Tracking Number</button>
-
     </div>
+        <div class='col-4'>
+          <button onclick="guess('Mick')"> Guess Mick</button>
+          <button onclick="guess('Brittany')"> Guess Brittany</button>
+          <button onclick="guess('Jonsey')"> Guess Jonsey</button>
+          <button onclick="guess('Jake')"> Guess Jake </button>
+          
+        </div>
+
 
   </div>
 </main>
