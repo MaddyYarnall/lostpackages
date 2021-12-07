@@ -50,12 +50,13 @@ trackingNumber: '1234kjs'
 }
 ]
 
-// function draw() {
-//   let template = ''
-//   for (let i = 0; i < packages.length; i++){
-//     const package = packages[i];
-//     template += `<li>${package.heavy}: ${package.priority}: ${package.fragile}: ${package.to}: ${package.trackingNumber}</li>`
-//   }
-//   document.getElementById('packages').innerHTML = template
-// }
+function draw() {
+  let template = ''
+  for (let i = 0; i < packages.length; i++){
+    let package = packages[i];
+    template += `<li>${package.heavy}: ${package.priority}: ${package.fragile}: ${package.to}: ${package.trackingNumber}</li>`
+  }
+  document.getElementById('packages').innerHTML = template
+}
 
+draw()
