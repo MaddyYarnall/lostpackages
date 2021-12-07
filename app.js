@@ -60,3 +60,13 @@ function draw() {
 }
 
 draw()
+
+function missingPackage(){
+  let packageIndex = Math.floor(Math.random() * packages.length)
+  return packages[packageIndex] 
+
+}
+
+// missingPackage()
+console.log(missingPackage())
+
